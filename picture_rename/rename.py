@@ -17,7 +17,7 @@ class BatchRename():
         for item in filelist:
             if item.endswith('.jpg'):
                 src = os.path.join(os.path.abspath(self.path), item)
-                dst = os.path.join(os.path.abspath('./picture_1'), '特朗普_'+str(i).rjust(5,'0')+ '.jpg')
+                dst = os.path.join(os.path.abspath('./picture'), '特朗普_'+str(i).rjust(5,'0')+ '.jpg')
                 try:
                     os.rename(src, dst)
                     print('converting %s to %s ...' % (src, dst))
